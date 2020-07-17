@@ -1,0 +1,60 @@
+<?php include("conexao.php"); ?>
+<html>
+<head>
+  <title>Reserva</title>
+</head>
+
+<body bgcolor="#242426" text="orange">
+<form action=" Script_do_Formulario.php" method="post" >
+
+<!-- DADOS PESSOAIS-->
+<fieldset>
+ <legend>Reserva</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="nome">Nome: </label>
+   </td>
+   <td align="center">
+    <input type="text" name="email">
+   </td>
+   <td>
+    <label for="sobrenome">Sobrenome: </label>
+   </td>
+   <td align="center">
+    <input type="text">
+   </td>
+  </tr><tr>
+   <td>
+    <label>Dia da Reserva: </label>
+   </td>
+   <td align="center">
+    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+   </td>
+  </tr>
+ <td>
+    <label for="telefone">Telefone:</label>
+   </td>
+   <td align="center">
+    <input type="text" name="telefone">
+   </td>
+  <tr>
+   <td>
+    <label>CPF:</label>
+   </td>
+   <td align="center">
+    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+
+<br />
+
+<input type="submit">
+<input type="reset" value="Limpar">
+</form>
+</body>
+</html>
